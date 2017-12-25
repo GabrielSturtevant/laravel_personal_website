@@ -20,7 +20,7 @@ class MakePersonTable extends Migration
             $table->string('last_name', 32);
             $table->string('display_name', 64);
             $table->string('email', 64);
-            $table->string('phone', 64);
+            $table->string('phone', 16);
             $table->text('linkedin');
             $table->text('github');
             $table->text('websites');
