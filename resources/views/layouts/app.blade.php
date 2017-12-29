@@ -11,13 +11,16 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div id="app">
     {{--Header Partial--}}
-    @include('layouts.partials.header')
+    {{--@include('layouts.partials.header')--}}
     @yield('content')
+    @include('layouts.partials.footer')
 </div>
 
 <!-- Scripts -->

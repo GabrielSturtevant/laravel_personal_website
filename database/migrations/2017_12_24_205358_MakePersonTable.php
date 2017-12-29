@@ -25,7 +25,7 @@ class MakePersonTable extends Migration
             $table->text('github');
             $table->text('websites');
             $table->text('description')->nullable();
-            $table->integer('picture')->nullable();
+            $table->integer('picture_id')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });

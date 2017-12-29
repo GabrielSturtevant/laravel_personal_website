@@ -20,6 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //Test Route
-Route::get('/gabe', function(){
-   return view('layouts.resume.resume');
-});
+Route::get('/gabe', 'ResumeController@resume');

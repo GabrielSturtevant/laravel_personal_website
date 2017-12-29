@@ -21,6 +21,7 @@ class MakeProjectsTable extends Migration
             $table->text('description')->nullable();
             $table->integer('picture')->nullable();
             $table->string('website', 256);
+            $table->timestamp('completion_date');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });
