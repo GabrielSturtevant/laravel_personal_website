@@ -17,6 +17,7 @@ class PicturesTableSeeder extends Seeder
             'original_filename' => 'gabe.png',
             'new_filename'      => '1.png',
             'path'              => 'storage/pictures/user_1',
+            'full_path'         => config('url') . 'storage/pictures/user_1/1.png',
             'height'            => 180,
             'width'             => 180,
             'created_at'        => Carbon::now(),

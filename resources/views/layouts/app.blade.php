@@ -19,6 +19,7 @@
 <div id="app">
     {{--Header Partial--}}
     {{--@include('layouts.partials.header')--}}
+    @yield('header')
     @yield('content')
     @include('layouts.partials.footer')
 </div>

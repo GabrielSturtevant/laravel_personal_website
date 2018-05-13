@@ -1,5 +1,8 @@
 @extends('layouts.app')
-@include('layouts.partials.header')
+
+@section('header')
+    @include('layouts.partials.header')
+@endsection
 
 @section('content')
     <div class="container">

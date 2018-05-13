@@ -12,7 +12,7 @@
 */
 
 $app = new Illuminate\Foundation\Application(
-    realpath(__DIR__.'/../')
+    realpath(__DIR__ . '/../')
 );
 
 /*
@@ -51,5 +51,10 @@ $app->singleton(
 | from the actual running of the application and sending responses.
 |
 */
+
+
+//TODO: REMOVE THIS BEFORE PUTTING INTO PRODUCTION
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: *');
 
 return $app;

@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ResumeController@resume');
 
 Auth::routes();
 
@@ -21,3 +19,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Test Route
 Route::get('/gabe', 'ResumeController@resume');
+Route::get('/dashboard', function (){
+    return view('layouts.dashboard.dashboard');
+});

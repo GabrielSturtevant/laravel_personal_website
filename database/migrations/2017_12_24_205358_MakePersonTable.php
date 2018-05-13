@@ -26,6 +26,7 @@ class MakePersonTable extends Migration
             $table->text('websites');
             $table->text('description')->nullable();
             $table->integer('picture_id')->nullable();
+            $table->integer('user_id')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });

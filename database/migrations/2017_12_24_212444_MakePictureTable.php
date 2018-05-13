@@ -21,6 +21,7 @@ class MakePictureTable extends Migration
             $table->string('original_filename', 256);
             $table->string('new_filename', 256);
             $table->string('path', 256);
+            $table->string('full_path', 512);
             $table->integer('height')->nullable();
             $table->integer('width')->nullable();
             $table->timestamp('created_at')->nullable();

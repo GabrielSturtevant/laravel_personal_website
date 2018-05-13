@@ -20,9 +20,10 @@ class PersonTableSeeder extends Seeder
             'phone'         => '(661) 532-8176',
             'linkedin'      => 'http://www.linkedin.com',
             'github'        => 'http://www.github.com',
-            'websites'      => 'http://www.gabrielsturtevant.com,http://www.sturtevant.email',
+            'websites'      => 'http://www.gabrielsturtevant.com,http://sturtevant.email',
             'description'   => 'I am an upcoming computer science graduate at California State University, Northridge. I have a deep passion for technology and open source software. Technology isn\'t just work for me, it is my pastime and my favorite hobby.',
             'picture_id'    => 1,
+            'user_id'       => 1,
             'created_at'    => Carbon::now(),
             'updated_at'    => Carbon::now(),
         ]);
